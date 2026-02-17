@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="description"
+      content="Islamic audio player for Naats, Hamd and Quran recitations — stream devotional recitations with album art, progress, volume, shuffle and repeat controls."
+    />
+    <meta name="theme-color" content="#1b8a34" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%231b8a34'/><path d='M40 32a12 12 0 1 1-12-12 9 9 0 0 0 12 12z' fill='white'/><polygon points='44,16 48,26 38,22 32,26 36,16' fill='white'/></svg>"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%231b8a34'/><path d='M40 32a12 12 0 1 1-12-12 9 9 0 0 0 12 12z' fill='white'/><polygon points='44,16 48,26 38,22 32,26 36,16' fill='white'/></svg>"
+    />
+      <meta name="keywords" content="audio player, Islamic music, Naats, Hamd, Quran recitation, devotional music, streaming player, music controls" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Audio Player</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- LEFT SIDE PLAYER -->
+      <div class="player-card">
+        <div class="album-art">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZvdc0ycMD11iBwNY1EzGIeoVQK1CTWKbEw&s"
+            alt=""
+            class="album-img"
+            alt="Album Art Image"
+          />
+        </div>
+
+        <div class="track-info">
+          <div class="track-title">Allahu Akbar Allahu Akbar</div>
+          <div class="artist-name">Ahmed Bukhatir</div>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="time-stamps">
+            <span id="song-time">0:00</span>
+            <span class="total-time">3:28</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-shuffle">Shuffle</button>
+          <button class="btn btn-previous">Prev</button>
+          <button class="btn btn-play">
+            <i class="fa-solid fa-play play-btn"></i>
+          </button>
+          <button class="btn btn-next">Next</button>
+          <button class="btn btn-repeat">Repeat</button>
+        </div>
+        <div class="volume">
+          <i class="fa-solid fa-volume-high volume-icon"></i>
+          <input
+            type="range"
+            id="volume-control"
+            min="0"
+            max="100"
+            value="60"
+            style="width: 100%; margin-top: 20px"
+          />
+        </div>
+      </div>
+
+      <!-- RIGHT PLAYLIST -->
+      <div class="playlist-panel">
+        <div class="panel-title">♪ Now Playing</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
