@@ -12,6 +12,8 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Roboto, sans-serif;
   user-select: none;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
 }
 
 body {
@@ -234,7 +236,6 @@ body {
   .app {
     grid-template-columns: 1fr;
     gap: 10px;
-    --webkit-tap-highlight-color: transparent;
     outline: none;
   }
   .player-card {
@@ -243,5 +244,8 @@ body {
   .playlist-panel {
     border-radius: 0%;
     min-height: 70vh;
+  }
+  .btn-play {
+    --webkit-tap-highlight-color: transparent;
   }
 }
