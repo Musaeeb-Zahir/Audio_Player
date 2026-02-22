@@ -94,7 +94,7 @@ function activeSongCard() {
 const playNextSong = () => {
   if (currentIndex < allSongs.length - 1) {
     if (isShuffle) {
-      let randomIndex = Math.round(Math.random() * allSongs.length);
+      let randomIndex = Math.floor(Math.random() * allSongs.length);
       currentIndex = randomIndex;
     } else {
       currentIndex++;
